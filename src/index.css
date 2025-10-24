@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Inter:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    --background: 257 20% 97%; /* brand-off-white */
+    --foreground: 257 28% 33%; /* brand-purple */
+    --card: 257 20% 97%; /* brand-off-white */
+    --card-foreground: 257 28% 33%; /* brand-purple */
+    --popover: 257 20% 97%;
+    --popover-foreground: 257 28% 33%;
+    --primary: 328 73% 56%; /* brand-pink */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 257 20% 92%;
+    --secondary-foreground: 257 28% 33%;
+    --muted: 257 20% 92%;
+    --muted-foreground: 257 20% 55%;
+    --accent: 257 20% 92%;
+    --accent-foreground: 257 28% 33%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 257 20% 88%;
+    --input: 257 20% 88%;
+    --ring: 328 73% 56%;
+    --radius: 0.75rem;
+  }
+  .dark {
+    --background: 257 28% 23%; /* Darker purple */
+    --foreground: 257 20% 97%; /* brand-off-white */
+    --card: 257 28% 28%;
+    --card-foreground: 257 20% 97%;
+    --popover: 257 28% 23%;
+    --popover-foreground: 257 20% 97%;
+    --primary: 328 73% 66%; /* Lighter pink */
+    --primary-foreground: 257 28% 13%;
+    --secondary: 257 28% 33%;
+    --secondary-foreground: 257 20% 97%;
+    --muted: 257 28% 33%;
+    --muted-foreground: 257 20% 65%;
+    --accent: 257 28% 33%;
+    --accent-foreground: 257 20% 97%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 257 28% 38%;
+    --input: 257 28% 38%;
+    --ring: 328 73% 66%;
+  }
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    text-rendering: optimizeLegibility;
+  }
+}
